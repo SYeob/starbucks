@@ -91,6 +91,26 @@ a {
   color: #2f812d;
   text-decoration: underline;
 }
+.background_menu {
+  width: 100%;
+  left:0;
+  top:122px;
+  position: absolute;
+  z-index: 100;
+  height: 400px;/*height값 auto로 바꾸기 */
+  background:  #2c2a2a;
+}
+.background_menu ul{
+  width: 57%;
+  margin: 0 auto;
+}
+.background_menu ul li {
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  width: 200px;
+}
+
 /* top_wrap */
 #top_wrap {
   width: 100%;
@@ -120,6 +140,7 @@ a {
 
 .set_common {
   position: absolute;
+  display:none;
 }
 
 .drink_01 {
@@ -177,14 +198,14 @@ a {
   left: 45%;
 }
 .notice_list {
-  position: absolute;
+  position: relative;
   left: 55%;
   width: 300px;
   height: 30px;
   font-size: 16px;
-  overflow: hidden;
 }
 .notice_list li {
+  position: absolute;
   margin-top: 2px;
   margin-bottom: 20px;
 }
@@ -415,17 +436,20 @@ a {
 .bean_img_box {
   z-index: 9;
   top: 15%;
-  left: 11%;
+  left: -31%;
+  /* left: 11% */
   max-width: 483px;
   width: 43%;
   position: absolute;
+  transition: all 0.5s;
 }
 .bean_text_box {
   z-index: 9;
   top: 32%;
-  right: 8%;
+  right: -28%;
   max-width: 423px;
   width: 37%;
+  transition: all 0.5s;
   position: absolute;
 }
 
@@ -489,6 +513,10 @@ a {
   left: 33.6%;
   bottom: 90px;
 }
+#christmas_event {
+  opacity: 0.1;
+  transition: all 1s;
+}
 .reserve_visual img {
   display: block;
 }
@@ -506,24 +534,30 @@ a {
 .fav_prod_txt01 {
   background: url("../asset/fav_prod_txt01.png") no-repeat;
   height: 204px;
-  left: 200px;
+  left: -200px;
+  /* left: 200px; */
   overflow: hidden;
   position: absolute;
   text-indent: -20000px;
   top: 120px;
   width: 258px;
   z-index: 7;
+  opacity: 0.3;
+  transition: all 0.5s;
 }
 .fav_prod_txt02 {
   background: url("../asset/fav_prod_txt02.png") no-repeat;
   height: 156px;
-  left: 92px;
+  left: -192px;
+  /* left: 92px; */
   overflow: hidden;
   position: absolute;
   text-indent: -20000px;
   top: 370px;
   width: 362px;
   z-index: 7;
+  opacity: 0.3;
+  transition: all 1s;
 }
 
 .btn_fav_prod {
@@ -606,35 +640,44 @@ a {
   background: url(../asset/store_txt01.png);
   height: 54px;
   position: absolute;
-  right: 149px;
+  /* right: 149px; */
+  right: -100px;
   overflow: hidden;
   text-indent: -20000px;
   top: 100px;
   width: 385px;
   z-index: 4;
+  opacity: 0.3;
+  transition: all 1s;
 }
 .store_txt02 {
   background: url(../asset/store_txt02.png);
   height: 61px;
   position: absolute;
-  right: 168px;
+  right: -168px;
+  /* right: 168px; */
   overflow: hidden;
   text-indent: -20000px;
   top: 168px;
   width: 366px;
   z-index: 4;
+  opacity: 0.3;
+  transition: all 1s;
 }
 #store_btn {
   border: 2px solid #222;
   border-radius: 3px;
   height: 36px;
   position: absolute;
-  right: 402px;
+  right: -202px;
+  /* right: 402px; */
   top: 228px;
   width: 121px;
   z-index: 10;
   color: #222;
   text-align: center;
+  opacity: 0.3;
+  transition: all 1s;
 }
 
 /* footer */
